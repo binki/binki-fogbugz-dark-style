@@ -1,0 +1,84 @@
+@-moz-document domain("fogbugz.com") {
+body,
+input {
+    background-color: #000;
+    color: #bbb;
+}
+
+.gw-nav-pane {
+    background-color: #000;
+    border-right: 1px solid #666;
+}
+
+#main-wrap,
+#main {
+    background-color: black;
+}
+
+.case,
+.case .left .content {
+  color: inherit;
+}
+.case > article {
+    background-color: #000;
+}
+.case nav {
+    background-color: #000;
+}
+.case .top {
+    background-color: #000;
+}
+.case .top .right > header > h1,
+.case .top .right > header .case-number {
+    color: #bbb;
+}
+.event .body,
+.event.changeset .body,
+.event.changeset {
+    background-color: transparent;
+}
+.event.changeset {
+    border-color: #141;
+}
+.event.changeset .repo-crumb,
+.event header .changes {
+    color: #999;
+}
+
+
+a,
+.case .corner #case-link a,
+.gw-nav-submenu ul:not(.item-actions) > li a,
+.case nav .controls .control {
+    color: #68c;
+}
+.case nav .controls .control:hover,
+.case nav .controls .control:hover svg {
+    color: #46a;
+    fill: #aaa;
+}
+.case .left .content .case.visited {
+    color: #88c;
+}
+
+.gw-btn {
+    background: #000;
+}
+.gw-btn-main {
+    border-color: #68c
+}
+.gw-nav-link-icon svg {
+    fill: #777;
+}
+.gw-nav-entry-time .list-choices-popup .list-choices-item:hover {
+  background:transparent;
+}
+.gw-wrapper:not(.nav-is-mobile) .gw-nav-submenu,
+.gw-wrapper:not(.nav-is-mobile) .gw-nav-cases,
+.gw-search,
+.gw-search .search-guide,
+.gw-search .search-guide .panel {
+    background: #000;
+}
+
+}
