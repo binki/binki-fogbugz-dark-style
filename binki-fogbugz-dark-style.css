@@ -1,6 +1,7 @@
 @-moz-document domain("fogbugz.com") {
 body,
-input {
+input,
+.case input {
     background-color: #000;
     color: #bbb;
 }
@@ -29,7 +30,8 @@ input {
     background-color: #000;
 }
 .case .top .right > header > h1,
-.case .top .right > header .case-number {
+.case .top .right > header .case-number,
+.chunky-droplist .droplist-chunk {
     color: #bbb;
 }
 .event .body,
@@ -49,7 +51,9 @@ input {
 a,
 .case .corner #case-link a,
 .gw-nav-submenu ul:not(.item-actions) > li a,
-.case nav .controls .control {
+.case nav .controls .control,
+.href,
+.m-btn {
     color: #68c;
 }
 .case nav .controls .control:hover,
@@ -70,8 +74,19 @@ a,
 .gw-nav-link-icon svg {
     fill: #777;
 }
-.gw-nav-entry-time .list-choices-popup .list-choices-item:hover {
-  background:transparent;
+.gw-nav-entry-time .list-choices-popup .list-choices-item:hover,
+.gw-nav-mobile,
+.chunky-droplist,
+.select-droplist {
+    background:transparent;
+}
+.select-droplist.disabled,
+.select-droplist .droplist-input:disabled {
+    background: #222;
+}
+.event .editor > textarea {
+    background: transparent;
+    color: #bbb;
 }
 .gw-wrapper:not(.nav-is-mobile) .gw-nav-submenu,
 .gw-wrapper:not(.nav-is-mobile) .gw-nav-cases,
@@ -81,4 +96,14 @@ a,
     background: #000;
 }
 
+
+.case .datetime-input-container svg {
+    fill: #6ac;
+}
+.m-btn {
+    background: transparent;
+}
+.event .buttons #btnSubmit, .event .buttons #btnSendAndClose, .event .buttons #btnResolveAndClose {
+    background: #46a;
+}
 }
